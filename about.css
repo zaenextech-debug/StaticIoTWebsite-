@@ -1,0 +1,56 @@
+/* ===== Page Hero ===== */
+.page-hero{
+  background:url('images/about-banner.jpg') center/cover no-repeat;
+  height:240px; display:flex; align-items:center; justify-content:center;
+  color:#fff; text-align:center;
+}
+.page-hero-inner h1{font-size:40px;font-weight:700;margin:0}
+
+/* ===== Breadcrumb ===== */
+.breadcrumb{
+  max-width:1100px;margin:20px auto;font-size:14px;color:#556;
+  padding:0 16px;
+}
+.breadcrumb a{color:#0b66d0;text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+
+/* ===== About Section ===== */
+.about-block{max-width:1100px;margin:32px auto;padding:0 16px}
+.about-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:32px;align-items:start}
+.about-text h2{margin:0 0 8px;font-size:28px}
+.about-text p{color:#374151;line-height:1.7;margin:10px 0}
+.about-text hr{border:0;border-top:1px solid #eef2f7;margin:16px 0}
+.about-text h3{margin:8px 0 6px;font-size:18px}
+
+/* ===== Buttons ===== */
+.about-cta{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;
+     border-radius:10px;font-weight:600;text-decoration:none}
+.btn-green{background:#c52238;color:#fff}
+.btn-green:hover{background:#e02121}
+.btn-outline{border:2px solid #1a10a5;color:#3942c5;background:transparent}
+.btn-outline:hover{background:#071fa3;color:#fff}
+
+/* ===== Photo ===== */
+.about-photo img{
+  width:100%;max-width:420px;aspect-ratio:4/5;object-fit:cover;
+  border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.12)
+}
+.about-photo {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}@keyframes glow {
+  from { box-shadow: 0 0 10px #007bff; }
+  to { box-shadow: 0 0 25px #00bfff; }
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width:900px){
+  .about-grid{grid-template-columns:1fr;gap:18px}
+  .about-photo img{max-width:100%}
+}

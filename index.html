@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZaenexTech| Embedded Systems</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-bxVt6j9Dh2kcoQd1s7vAqLghpGwbzvlWmRPTqMLf2yqFUsAEo63+nA4K5E3r9IRL0dVj1jB1sQ0XmgP+HXkYfw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-left">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+
+    <div class="top-center">
+      <a href="#">Contact Us</a> |
+      <a href="#">News & Updates</a> |
+      <a href="#">Investors</a>
+    </div>
+
+    <div class="top-right">
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <input type="checkbox" id="theme-switch" />
+        <label for="theme-switch" class="switch"></label>
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-icon">Z</div>
+        <div class="logo-text">aenex<span>Tech</span></div>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Services ▾</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-sub">
+                <a href="#">PCB Design ▸</a>
+                <ul class="submenu">
+                  <li><a href="#">Mechanical Design</a></li>
+                  <li><a href="#">Embedded Systems</a></li>
+                  <li><a href="#">IoT Solutions</a></li>
+                  <li><a href="#">Electrical Design</a></li>
+                  <li><a href="#">Testing & Validation</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-sub">
+                <a href="#">Embedded Hardware ▸</a>
+                <ul class="submenu">
+                  <li><a href="#">Robotics</a></li>
+                  <li><a href="#">ESP32/STM32/Arduino</a></li>
+                  <li><a href="#">PLCs</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-sub">
+                <a href="#">Firmware Development ▸</a>
+                <ul class="submenu">
+                  <li><a href="#">RTOS/bare-meta</a></li>
+                  <li><a href="#">bootloaders</a></li>
+                  <li><a href="#">structured testing</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-sub">
+                <a href="#">Software Engineering ▸</a>
+                <ul class="submenu">
+                  <li><a href="#">Custom Software</a></li>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Mobile Applications</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-sub">
+                <a href="#">Firmware Development ▸</a>
+                <ul class="submenu">
+                  <li><a href="#">device lifecycle at scale</a></li>
+                  <li><a href="#"> dashboards</a></li>
+                  <li><a href="#">MQTT/HTTP</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Industry ▾</a>
+            <ul class="dropdown-menu industry-menu">
+              <li><a href="#"><span class="icon"></span> Transportation</a></li>
+              <li><a href="#"><span class="icon"></span> Industrial Products & Machinery</a></li>
+              <li><a href="#"><span class="icon"></span> Process Engineering</a></li>
+              <li><a href="#"><span class="icon"></span> Energy</a></li>
+              <li><a href="#"><span class="icon"></span> Hi-Tech & Medical Devices</a></li>
+              <li><a href="#"><span class="icon"></span> Furniture</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Products ▾</a>
+            <ul class="dropdown-menu products-menu">
+              <li><a href="#"><span class="icon"></span> NXT Qualsure AI Vision-Based System</a></li>
+              <li><a href="#"><span class="icon"></span> NXT TrakPro Smart Hat</a></li>
+              <li><a href="#"><span class="icon"></span> Interactive eParts Manual</a></li>
+              <li><a href="#"><span class="icon"></span> Smart Machine Solutions</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">About Us ▾</a>
+            <ul class="dropdown-menu about-menu">
+              <li><a href="about-overview.html">Overview</a></li>
+              <li><a href="partner.html">Our Partners</a></li>
+              <li><a href="#">Leadership</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO banner -->
+  <section class="hero-banner" role="region" aria-labelledby="hero-title">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <h2 id="hero-title">Embedded Systems / IoT Electronics</h2>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb container">
+    <a href="#">Home</a> » 
+    <a href="#">Services</a> » 
+    <a href="#">IoT Solutions</a> » 
+    <span>Embedded Systems / IoT Electronics</span>
+  </div>
+
+  <!-- Intro Section -->
+  <section class="container intro">
+    <div class="text">
+      <h2>ZaenexTech Tomorrow's Connectivity with Embedded Systems and IoT Solutions</h2>
+      <p>
+        Enter the realm of Embedded Systems and IoT Electronics at ZaenecTech. Our focus lies in 
+        delivering integrated solutions through custom hardware design, firmware development, 
+        and sensor integration. With expertise in IoT electronics, we optimize devices for 
+        efficiency, functionality, and scalability.
+      </p>
+      <p>
+        At Zaenex Tech, our commitment lies in the convergence of technology components, creating 
+        reliable, high-performance systems. Explore the intersection of innovation and 
+        practicality as we navigate the intricate landscape of Embedded Systems and IoT Electronics.
+      </p>
+    </div>
+    <div class="image">
+      <img src="assests/images/chip.jp/istockphoto-483147081-612x612.jpg" alt="Chip image">
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section class="industries">
+    <div class="content">
+      <h2>Industries That We Serve!</h2>
+      <p>
+        We are experienced in catering to a diverse and wide range of industries. 
+        Our speciality is providing forward-looking engineering solutions as needed.
+      </p>
+
+      <div class="industries-grid">
+        <div class="industry-box">
+          <img src="https://img.icons8.com/ios/100/ffffff/delivery.png" alt="Transportation">
+          <h4>Transportation</h4>
+        </div>
+        <div class="industry-box">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/maintenance.png" alt="Industrial Products">
+          <h4>Industrial Products & Machinery</h4>
+        </div>
+        <div class="industry-box">
+          <img src="https://img.icons8.com/ios/100/ffffff/processor.png" alt="Process Engineering">
+          <h4>Process Engineering</h4>
+        </div>
+        <div class="industry-box">
+          <img src="https://img.icons8.com/ios/100/ffffff/lightning-bolt.png"alt="Energy">
+          <h4>Energy</h4>
+        </div>
+        <div class="industry-box">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/medical-doctor.png"  alt="Hi-Tech">
+          <h4>Hi-Tech & Medical Devices</h4>
+        </div>
+        <div class="industry-box">
+          <img src= "https://img.icons8.com/ios-filled/100/ffffff/armchair.png"alt="Furniture">
+          <h4>Furniture</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="svc">
+    <div class="svc__head">
+      <div>
+        <h2>Services</h2>
+        <span class="svc__rule"></span>
+        <p class="svc__tag">Transforming Ideas into Reality. Cutting-Edge Engineering Services</p>
+      </div>
+      <div class="svc__desc"></div>
+    </div>
+
+    <div class="svc__grid">
+      <a class="svc__card" href="embedded-hardware.html">
+        <img src="assests/images/embedded-hardware-design-and-development.jpg" alt="Embedded Hardware Development">
+
+        <div class="svc__overlay"></div>
+        <div class="svc__meta">
+          <span class="svc__title">Embedded Hardware Development</span>
+        </div>
+      </a>
+
+      <a class="svc__card svc__card--tint" href="firmware-development.html">
+        <img src="assests/images/firm ware.jpg" alt="Firmware Development">
+        <div class="svc__overlay"></div>
+        <div class="svc__meta">
+          <span class="svc__title">Firmware Development</span>
+        </div>
+      </a>
+
+      <a class="svc__card" href="#">
+        <img src="assests/images/s.engg.jpg" alt="Software Engineering">
+        <div class="svc__overlay"></div>
+        <div class="svc__meta">
+          <span class="svc__title">Software Engineering</span>
+        </div>
+      </a>
+
+      <a class="svc__card" href="#">
+        <img src="assests/images/service iot.jpg" alt="IoT Integration">
+        <div class="svc__overlay"></div>
+        <div class="svc__meta">
+          <span class="svc__title">IoT Integration</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Hardware Solutions -->
+  <section class="container hardware">
+    <h2>Hardware Solutions</h2>
+    <div class="grid">
+      <article>
+        <img src="assests/images/chip.jp/hardware-design.jpg.webp" alt="Hardware Design">
+        <h3>Customized Embedded Hardware Design</h3>
+        <p>Tailored embedded hardware solutions meeting your specific requirements, from microcontrollers to sensors.</p>
+      </article>
+      <article>
+        <img src="assests/images/chip.jp/a66f2c5a-db99-45b3-992e-fea24c813fa4_Frame+14375.avif" alt="IoT Devices">
+        <h3>IoT Device Development</h3>
+        <p>Creating intelligent devices that enhance automation, data collection, and communication.</p>
+      </article>
+      <article>
+        <img src="assests/images/chip.jp/images.jpg" alt="Sensors">
+        <h3>Sensor Integration</h3>
+        <p>Real-time data acquisition and processing for reliable and scalable IoT solutions.</p>
+      </article>
+      <article>
+        <img src="assests/images/chip.jp/images (1).jpg" alt="Prototyping">
+        <h3>Prototyping & Testing</h3>
+        <p>Fast prototyping and rigorous testing to ensure reliability before large-scale production.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Inline styles only for the two-image layout below -->
+  <style>
+    .section { display:flex; justify-content:space-between; align-items:flex-start; padding:50px 10%; }
+    .section-text { flex:1; padding-right:40px; }
+    .section-text h2 { font-size:28px; font-weight:bold; color:#1a1a1a; }
+    .section-text h2::after { content:""; display:block; width:50px; height:3px; background:#e63946; margin:10px 0; }
+    .section-text p { font-size:15px; line-height:1.7; margin-bottom:15px; }
+    .read-btn { display:inline-block; padding:10px 20px; border:2px solid #e63946; border-radius:30px; color:#e63946; text-decoration:none; font-weight:bold; transition:.3s; }
+    .read-btn:hover { background:#e63946; color:#fff; }
+    .section-images { flex:1; position:relative; }
+    .section-images img { width:300px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); position:absolute; }
+    .section-images img:first-child { top:0; right:50px; }
+    .section-images img:last-child { top:180px; right:0; }
+  </style>
+
+  <!-- Why Choose -->
+  <section class="why-choose-section">
+    <div class="why-inner">
+      <h2>Why Choose ZaenecTech for Embedded Systems/ IoT Electronics?</h2>
+      <span class="underline"></span>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <img src="C:\Users\Hp\Desktop\tecno\embedded-iot-site\assests\images\chip.jp\images.png" alt="Integration">
+          <h3>Excellence Through Integration</h3>
+          <p>At ZaenecTech we embrace the philosophy of excellence through integration. Our strength lies in creating cohesive and efficient systems by seamlessly merging custom hardware, firmware, and sensors. This integrated approach ensures your solutions not only meet but exceed performance expectations.</p>
+        </div>
+
+        <div class="why-card">
+          <img src="C:\Users\Hp\Desktop\tecno\embedded-iot-site\assests\images\chip.jp\images (1).png" alt="Efficiency">
+          <h3>Efficiency and Scalability</h3>
+          <p>ZaenecTechs expertise in IoT electronics is synonymous with efficiency and scalability. We don’t just aim for efficient devices; we design them with scalability in mind. This means your IoT infrastructure can adapt seamlessly to evolving needs, providing a future-ready solution.</p>
+        </div>
+
+        <div class="why-card">
+          <img src="https://img.icons8.com/ios/64/0a3d91/engineering.png" alt="Tailoring Solutions">
+          <h3>Tailoring Solutions for You</h3>
+          <p>One size doesn’t fit all, and at ZaenecTech, we understand the uniqueness of each IoT project. Our dedication to tailoring solutions ensures that your specific requirements are not just met but exceeded. We strive to integrate these solutions seamlessly, guaranteeing optimal performance for your project.</p>
+        </div>
+
+        <div class="why-card">
+          <img src="https://img.icons8.com/ios/64/0a3d91/innovation.png" alt="Innovation Driven">
+          <h3>Innovation-Driven Solutions</h3>
+          <p>ZaenecTech is at the forefront of innovation. When you choose us, you’re partnering with a team committed to exploring cutting-edge technologies and implementing innovative solutions in Embedded Systems and IoT Electronics. Our forward-thinking approach ensures your projects benefit from the latest advancements in the field.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Split section -->
+  <section class="section">
+    <div class="section-text">
+      <h2>Welcome to the Center of Engineering Innovation and Excellence</h2>
+      <p>At our core, we combine technology, creativity, and expertise to deliver world-class engineering solutions. From product design and digital engineering to manufacturing support, we help industries transform ideas into impactful realities.</p>
+      <p>Driven by innovation and backed by a strong global presence, we partner with clients to build smarter, sustainable, and future-ready engineering solutions.</p>
+      Backed by a strong global presence, we help clients achieve sustainable
+      growth with innovative solutions and reliable partnerships.
+      <a href="#" class="read-btn">Read More →</a>
+    </div>
+
+    <div class="section-images">
+      <img src="assests/images/chip.jp/360_F_321031954_RX4bH9saYe4nZvhrzjc0Jxci1bxxPkzh.jpg" alt="Engineering Work">
+      <img src="assests/images/chip.jp/professional-labor-machanic-engineer-technician-260nw-2347907891.webp" alt="Worker with Helmet">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <div class="contact-box">
+      <h2>Get In Touch</h2>
+      <p>If you have any questions, just fill in the contact form and we will answer you shortly</p>
+
+      <form action="form-handler.php" method="post">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="text" name="company" placeholder="Company Name" required>
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="phone" placeholder="Phone" required>
+        </div>
+        <div class="form-row">
+          <select name="country" required>
+            <option value="">Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="germany">Germany</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <textarea name="message" rows="4" placeholder="Message"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+        </div>
+        <div class="form-row">
+          <input type="checkbox" required> By checking this box you agree to receive recurring messages from ZaenecTech     Engineering Inc.*
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Ready to excel in engineering with Embedded Systems and IoT Electronics?</h2>
+      <p>Contact us today to explore how we can elevate your product performance to new heights.</p>
+      <a href="#" class="btn-contact">Contact Us</a>
+    </div>
+
+    <section class="newsletter">
+      <div class="newsletter-inner">
+        <div class="nl-left">
+          <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect>
+            <polyline points="3,7 12,13 21,7"></polyline>
+          </svg>
+          <h3>Subscribe to our newsletter and stay up-to-date.</h3>
+        </div>
+        <form class="nl-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3 class="brand"><span>zaenextech</span> Systems</h3>
+        <p>Welcome to the center of world-class engineering solutions</p>
+        <p>Email: <a href="zaenextech@gmail.com">zaenextech@gmail.com</a></p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Product Engineering</a></li>
+            <li><a href="#">Plant Engineering</a></li>
+            <li><a href="#">Digital Manufacturing & Consulting</a></li>
+            <li><a href="#">Turnkey Solutions</a></li>
+            <li><a href="#">Software Solutions</a></li>
+            <li><a href="#">Data Services</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Leadership</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">NXT QualSure AI Vision</a></li>
+            <li><a href="#">NXT TrakPro Smart Hat</a></li>
+            <li><a href="#">Interactive eParts Manual</a></li>
+            <li><a href="#">Smart Machine Solutions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">CSR</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2025 - ZaenecTech Engineering Projects Ltd. All rights reserved. | <a href="#">Sitemap</a></p>
+    </div>
+  </footer>
+
+  <!-- Dark-mode toggle -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const switchBtn = document.getElementById('theme-switch');
+      if (!switchBtn) return;
+      const saved = localStorage.getItem('dark-mode') === 'true';
+      document.body.classList.toggle('dark-mode', saved);
+      switchBtn.checked = saved;
+      switchBtn.addEventListener('change', () => {
+        const on = switchBtn.checked;
+        document.body.classList.toggle('dark-mode', on);
+        localStorage.setItem('dark-mode', on);
+      });
+    });
+  </script>
+</body>
+</html>
