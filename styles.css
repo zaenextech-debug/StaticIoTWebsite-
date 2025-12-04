@@ -55,6 +55,16 @@ body.dark-mode .site-header { background:#0f172a; border-color:#1f2937; }
 .logo-icon { background:#b30000; color:#fff; font-weight:700; font-size:20px; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; }
 .logo-text { font-size:22px; font-weight:700; color:#003366; letter-spacing:.3px; }
 .logo-text span { color:#003366; }
+.logo img {
+    height: 45px;   /* Adjust as needed */
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+    logo-link {
+    display: inline-block;
+}
+}
+
 
 /* ================= NAVIGATION ================= */
 .main-nav > ul { list-style:none; display:flex; gap:20px; }
