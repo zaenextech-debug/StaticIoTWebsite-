@@ -1,0 +1,246 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("assests/embedded.webp") center/cover no-repeat;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* INTRO */
+.service-intro {
+  padding: 60px 10%;
+  font-size: 18px;
+}
+.service-section {
+  padding: 80px 10%;
+  background-color: #fff;
+}
+
+.service-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+  .hero {
+    height: auto;
+    padding: 80px 8%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+.hero {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.55);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 42px;
+}
+
+.breadcrumb {
+  padding: 15px 80px;
+  font-size: 14px;
+}
+
+.content {
+  padding: 60px 80px;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+
+/* INTRO */
+.service-intro {
+  padding: 60px 10%;
+  font-size: 18px;
+}
+
+/* SERVICE BLOCK */
+.service-block {
+  display: flex;
+  align-items: center;
+  padding: 70px 10%;
+  gap: 60px;
+}
+
+.service-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.service-text p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.service-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .service-block,
+  .service-block.reverse {
+    flex-direction: column;
+  }
+
+  .hero {
+    height: auto;
+    padding: 80px 8%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.service-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-row img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 8px;
+}
+
+.text h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.back-btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 18px;
+  background-color: #910b1d;   /* Blue */
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* CTA */
+.cta {
+  background: #0a3d91;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+/* CONTACT BUTTON STYLING (As per Image) */
+.cta .btn-contact, 
+.cta a[href*="#contact"],
+.cta a.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #e63946; /* Red color as shown in image */
+  color: #ffffff !important;   /* White text */
+  padding: 12px 35px;
+  border-radius: 50px;       /* Fully rounded corners */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta a.btn:hover, 
+.cta .btn-contact:hover {
+  background-color: #c92f3c; /* Thoda dark red hover par */
+  transform: scale(1.05);    /* Halki si growth hover par */
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,137 @@
+/* HERO */
+.software-hero {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url('assests/how-to-become-software-engineer.jpg.webp') center/cover no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  color: #ddd;
+  font-size: 18px;
+}
+
+/* INTRO */
+.intro-section {
+  padding: 70px 15%;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* SERVICES */
+.service-section {
+  padding: 90px 10%;
+}
+
+.gray-bg {
+  background-color: #f6f7f9;
+}
+
+.service-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.service-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.service-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.service-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.service-image img {
+  width: 100%;
+  max-width: 480px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .service-container,
+  .service-container.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+}
+.back-btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 18px;
+  background-color: #910b1d;   /* Blue */
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* CTA */
+.cta {
+  background: #0a3d91;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+/* CONTACT BUTTON STYLING (As per Image) */
+.cta .btn-contact, 
+.cta a[href*="#contact"],
+.cta a.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #e63946; /* Red color as shown in image */
+  color: #ffffff !important;   /* White text */
+  padding: 12px 35px;
+  border-radius: 50px;       /* Fully rounded corners */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta a.btn:hover, 
+.cta .btn-contact:hover {
+  background-color: #c92f3c; /* Thoda dark red hover par */
+  transform: scale(1.05);    /* Halki si growth hover par */
+}

@@ -1,91 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Firmware Development – Zaenex Tech</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#0f1524;--card:#141f36;--ink:#e5e7eb;--muted:#a3adc2;--line:#1e2a47;--cyan:#22d3ee;--green:#10b981;--accent:#22c55e;--violet:#7c3aed;--radius:14px}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0f1524,#0c1322);color:var(--ink)}
-.main{max-width:1080px;margin:0 auto;padding:56px 16px 64px}
-.page-head{display:flex;flex-direction:column;align-items:center;gap:8px}
-.page-title{margin:0;font-size:28px;font-weight:800}
-.page-sub{margin:0;color:var(--muted);text-align:center}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;font-weight:700;text-decoration:none}
-.btn-primary{background:var(--accent);color:#0b1020}
-.center{display:flex;justify-content:center;margin:16px 0 26px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media(max-width:960px){.cards{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
-.card h3{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:16px}
-.badge{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;color:#fff;font-size:14px}
-.purple{background:var(--violet)}.cyan{background:#0ea5e9}.blue{background:#2563eb}
-.list{display:grid;gap:10px}
-.label{font-size:13px;margin:0 0 6px}
-.bar{height:6px;border-radius:6px;background:#0b1430;border:1px solid #0f234a;overflow:hidden}
-.fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--green))}
-.footer-min{background:#191b20;color:#a8b0bf;margin-top:46px}
-.footer-line{height:1px;background:#2a2e38;max-width:1080px;margin:0 auto}
-.footer-inner{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:10px 16px}
-.footer-inner a{color:#a8b0bf;text-decoration:none}
-.footer-inner a:hover{color:var(--accent)}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaenex Firmware Development</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:#222;
+      line-height:1.7;
+    }
+
+    /* ===== HERO ===== */
+    .hero{
+      height:70vh;
+      background:url('assests/images/hero-bg.jp/banner2.jpg') center/cover no-repeat;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      text-align:center;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.6);
+    }
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:900px;
+      padding:20px;
+    }
+    .hero h1{
+      font-size:42px;
+      margin-bottom:15px;
+    }
+    .hero p{
+      font-size:18px;
+      color:#ddd;
+    }
+
+    /* ===== SECTION COMMON ===== */
+    .section{
+      padding:80px 10%;
+    }
+    .section h2{
+      font-size:32px;
+      margin-bottom:10px;
+    }
+    .underline{
+      width:60px;
+      height:4px;
+      background:#e63946;
+      margin-bottom:25px;
+    }
+    .intro p{
+      max-width:900px;
+      margin-bottom:15px;
+      color:#444;
+    }
+
+    /* ===== FEATURES ===== */
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+      gap:30px;
+      margin-top:50px;
+    }
+    .feature-card{
+      background:#fff;
+      border-radius:12px;
+      padding:30px 25px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+    .feature-card:hover{
+      transform:translateY(-8px);
+    }
+    .feature-card img{
+      width:55px;
+      margin-bottom:15px;
+    }
+    .feature-card h3{
+      font-size:20px;
+      margin-bottom:10px;
+    }
+    .feature-card p{
+      font-size:14.5px;
+      color:#555;
+    }
+
+    /* ===== CTA ===== */
+    .cta{
+      background:#0a3d62;
+      color:#fff;
+      text-align:center;
+      padding:70px 20px;
+    }
+    .cta h2{
+      font-size:34px;
+      margin-bottom:10px;
+    }
+    .cta p{
+      color:#ddd;
+      margin-bottom:25px;
+    }
+    .cta a{
+      display:inline-block;
+      padding:14px 30px;
+      background:#e63946;
+      color:#fff;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    .cta a:hover{
+      background:#c92f3c;
+    }
+  </style>
 </head>
 <body>
 
-<main class="main">
-  <div class="page-head">
-    <h1 class="page-title">💻 Firmware Development</h1>
-    <p class="page-sub">Reliable bare-metal and RTOS firmware with drivers, bootloaders, and tests.</p>
-  </div>
-
-  <div class="center">
-    <a href="services.html" class="btn btn-primary">Back to Services</a>
-  </div>
-
-  <section class="cards">
-    <!-- MCU Skills -->
-    <div class="card">
-      <h3><span class="badge purple">⚙</span> MCU Skills</h3>
-      <div class="list">
-        <div><p class="label">C / C++</p><div class="bar"><div class="fill" style="width:95%"></div></div></div>
-        <div><p class="label">HAL/LL Drivers</p><div class="bar"><div class="fill" style="width:85%"></div></div></div>
-        <div><p class="label">Interrupts & DMA</p><div class="bar"><div class="fill" style="width:82%"></div></div></div>
-        <div><p class="label">Low-Power Modes</p><div class="bar"><div class="fill" style="width:78%"></div></div></div>
-      </div>
-    </div>
-
-    <!-- OS & Modules -->
-    <div class="card">
-      <h3><span class="badge cyan">🧩</span> OS & Modules</h3>
-      <div class="list">
-        <div><p class="label">FreeRTOS</p><div class="bar"><div class="fill" style="width:94%"></div></div></div>
-        <div><p class="label">Bootloaders</p><div class="bar"><div class="fill" style="width:88%"></div></div></div>
-        <div><p class="label">OTA Update Flow</p><div class="bar"><div class="fill" style="width:86%"></div></div></div>
-        <div><p class="label">Unit & HIL Tests</p><div class="bar"><div class="fill" style="width:80%"></div></div></div>
-      </div>
-    </div>
-
-    <!-- Peripherals -->
-    <div class="card">
-      <h3><span class="badge blue">🔌</span> Peripherals</h3>
-      <div class="list">
-        <div><p class="label">I²C / SPI / UART</p><div class="bar"><div class="fill" style="width:92%"></div></div></div>
-        <div><p class="label">ADC / DAC / Timers</p><div class="bar"><div class="fill" style="width:86%"></div></div></div>
-        <div><p class="label">BLE / Wi-Fi (ESP32)</p><div class="bar"><div class="fill" style="width:84%"></div></div></div>
-        <div><p class="label">Storage (Flash/FS)</p><div class="bar"><div class="fill" style="width:82%"></div></div></div>
-      </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Zaenex Firmware Development</h1>
+      <p>Bringing Hardware to Life with Secure, High-Performance Embedded Software</p>
     </div>
   </section>
-</main>
 
-<footer class="footer-min">
-  <div class="footer-line"></div>
-  <div class="footer-inner">
-    <p>© 2025 Zaenex Tech.</p>
-    <a href="services.html">Back to Services</a>
+  <!-- INTRO -->
+  <section class="section intro">
+    <h2>Firmware That Powers Intelligent Systems</h2>
+    <div class="underline"></div>
+    <p>
+      At Zaenex, our Firmware Development team creates the intelligent layer that connects hardware with real-world functionality. We specialize in writing low-level, high-efficiency firmware that guarantees reliability, performance, and long-term scalability.
+    </p>
+    <p>
+      Our solutions form the backbone of embedded products—ensuring secure operation, deterministic behavior, and seamless communication across devices and platforms.
+    </p>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zaenex Firmware Development</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<!-- INTRO -->
+<section class="content">
+  <h2>Bringing Hardware to Life</h2>
+  <div class="red-line"></div>
+  <p>
+    Our Firmware Development team writes secure, deterministic, and high-efficiency code that
+    directly interfaces with hardware, ensuring reliable and real-time system operation.
+  </p>
+</section>
+
+<!-- SECTION 1 -->
+<section class="service-row">
+  <div class="text">
+    <h3>RTOS Implementation</h3>
+    <p>
+      We integrate RTOS platforms like FreeRTOS and Zephyr to manage concurrent tasks with precise
+      timing, ensuring deterministic execution for critical operations.
+    </p>
   </div>
-</footer>
+  <div class="image">
+    <img src="assests/website data/services/firmware development/Real-Time Operating System (RTOS) Implementation.jpg" alt="RTOS">
+  </div>
+</section>
 
+<!-- SECTION 2 -->
+<section class="service-row reverse">
+  <div class="text">
+    <h3>Low-Level Drivers & HAL</h3>
+    <p>
+      We develop optimized C/C++ drivers and Hardware Abstraction Layers for peripherals such as
+      SPI, I2C, ADC, DAC, enabling portability and scalability.
+    </p>
+  </div>
+  <div class="image">
+    <img src="assests/website data/services/firmware development/Low-Level Driver and HAL Development.jpg" alt="HAL">
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="service-row">
+  <div class="text">
+    <h3>Secure OTA & Bootloaders</h3>
+    <p>
+      We implement cryptographically secure OTA update mechanisms and robust bootloaders to ensure
+      safe firmware upgrades without device failure.
+    </p>
+  </div>
+  <div class="image">
+    <img src="assests/website data/services/firmware development/Secure Over-The-Air (OTA) Updates and Bootloaders.jpg" alt="OTA">
+  </div>
+</section>
+<a href="index.html" class="back-btn">← Back to Home</a>
+
+
+</body>
+</html>
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to Power Your Hardware with Intelligent Firmware?</h2>
+    <p>Partner with Zaenex to build secure, scalable, and high-performance embedded systems.</p>
+   <a href="index.html#contact">Contact Us</a> 
+  </section>
+</a>
 </body>
 </html>

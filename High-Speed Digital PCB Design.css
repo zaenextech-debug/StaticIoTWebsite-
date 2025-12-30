@@ -1,0 +1,85 @@
+.service-detail {
+  padding: 100px 12%;
+  background: #f6f7f9;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.service-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #111;
+}
+.red-line {
+  width: 60px;
+  height: 3px;
+  background: #c40000;
+  margin: 15px 0;
+}
+
+
+.service-intro {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #333;
+}
+.red-line {
+  width: 60px;
+  height: 3px;
+  background: #c40000;
+  margin: 15px 0;
+}
+.service-points {
+  list-style: none;
+  padding: 0;
+}
+
+.service-points li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.service-points li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #c70000;
+  font-weight: bold;
+}
+
+.service-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .service-container {
+    grid-template-columns: 1fr;
+  }
+
+  .service-text h2 {
+    font-size: 32px;
+  }
+}
+.back-btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 18px;
+  background-color: #910b1d;   /* Blue */
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
