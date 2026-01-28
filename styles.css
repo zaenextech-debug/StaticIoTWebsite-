@@ -60,7 +60,7 @@ body.dark-mode .site-header { background:#0f172a; border-color:#1f2937; }
 .logo-text { font-size:22px; font-weight:700; color:#003366; letter-spacing:.3px; }
 .logo-text span { color:#003366; }
 .logo img {
-    height: 70px;   /* Adjust as needed */
+    height: 65px;   /* Adjust as needed */
     width: auto;
     object-fit: contain;
     cursor: pointer;
@@ -368,4 +368,5 @@ body.dark-mode .cta-content p { color:#cbd5e1; }
     grid-template-columns: 1fr !important;
   }
 }
+
 
