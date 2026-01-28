@@ -14,13 +14,114 @@
 .breadcrumb a{color:#0b66d0;text-decoration:none}
 .breadcrumb a:hover{text-decoration:underline}
 
-/* ===== About Section ===== */
-.about-block{max-width:1100px;margin:32px auto;padding:0 16px}
-.about-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:32px;align-items:start}
-.about-text h2{margin:0 0 8px;font-size:28px}
-.about-text p{color:#374151;line-height:1.7;margin:10px 0}
-.about-text hr{border:0;border-top:1px solid #eef2f7;margin:16px 0}
-.about-text h3{margin:8px 0 6px;font-size:18px}
+/* ===== About Overview Section ===== */
+
+.about-block {
+  max-width:1100px;
+  margin:48px auto;
+  padding:48px 32px;
+  background:#f8fafc;
+  border-radius:18px;
+}
+
+/* Layout */
+.about-grid {
+  display:grid;
+  grid-template-columns:1.3fr 0.9fr;
+  gap:36px;
+  align-items:flex-start;
+}
+
+/* Tag */
+.about-tag {
+  display:inline-block;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#c52238;
+  margin-bottom:10px;
+}
+
+/* Text */
+.about-text h2 {
+  font-size:32px;
+  font-weight:800;
+  color:#0f172a;
+  margin-bottom:10px;
+}
+
+.about-lead {
+  font-size:17px;
+  line-height:1.8;
+  color:#334155;
+  margin-bottom:26px;
+}
+
+.about-text h3 {
+  font-size:20px;
+  font-weight:700;
+  color:#111827;
+  margin:24px 0 10px;
+}
+
+.about-text p {
+  color:#374151;
+  line-height:1.75;
+  margin-bottom:14px;
+}
+
+/* Right Card */
+.about-card {
+  background:#ffffff;
+  padding:28px;
+  border-radius:16px;
+  box-shadow:0 14px 30px rgba(0,0,0,0.08);
+}
+
+.about-card h4 {
+  font-size:18px;
+  font-weight:700;
+  color:#0f172a;
+  margin-bottom:14px;
+}
+
+.about-card ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.about-card li {
+  font-size:15px;
+  padding:10px 0;
+  color:#374151;
+  border-bottom:1px solid #eef2f7;
+}
+
+.about-card li:last-child {
+  border-bottom:none;
+}
+
+/* CTA */
+.about-cta {
+  margin-top:26px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* Responsive */
+@media (max-width:900px) {
+  .about-grid {
+    grid-template-columns:1fr;
+  }
+
+  .about-block {
+    padding:28px 18px;
+  }
+}
+
 
 /* ===== Buttons ===== */
 .about-cta{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
